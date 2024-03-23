@@ -1,79 +1,125 @@
 <!DOCTYPE html>
 <html lang="no">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Petersborgkvartalet gjesteparkering</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+      .accordion-button {
+        font-weight: bold;
+      }
+    </style>
 </head>
+
 <body style="margin:0px;padding:0px;">
-  <h1 style="margin: 20px;">Petersborgkvartalet gjesteparkering</h1>
-  <ul class="nav nav-pills" id="pills-tab" role="tablist" style="margin:20px;">
-   <li class="nav-item" role="presentation"	>
-    <button class="nav-link active" id="home-tab" data-bs-toggle="pill" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Informasjon</a>
-  </li>
-  <li class="nav-item">
-    <button class="nav-link" id="bop-tab" data-bs-toggle="pill" data-bs-target="#bop" type="button" role="tab" aria-controls="bop" aria-selected="false">Bestille øvre GP</a>
-  </li>
-  <li class="nav-item">
-    <button class="nav-link" id="kop-tab" data-bs-toggle="pill" data-bs-target="#kop" type="button" role="tab" aria-controls="kop" aria-selected="false">Kalender øvre GP</a>
-  </li>
-  <li class="nav-item">
-    <button class="nav-link" id="bnp-tab" data-bs-toggle="pill" data-bs-target="#bnp" type="button" role="tab" aria-controls="bnp" aria-selected="false">Bestille nedre GP</a>
-  </li>
-  <li class="nav-item">
-    <button class="nav-link" id="knp-tab" data-bs-toggle="pill" data-bs-target="#knp" type="button" role="tab" aria-controls="knp" aria-selected="false">Kalender nedre GP</a>
-  </li>
-</ul>
+  <header style="background-color: #444f55; color:white;">
+  <h3 style="padding: 15px;"><a href="gjesteparkering.html" style="color:white;text-decoration: none;">Petersborg gjesteparkering</a></h3>
+  </header>
+    <div class="accordion" id="accordionFlushExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseOne" aria-expanded="true" aria-controls="flush-collapseOne">
+            Info om ordning for gjesteparkering
+          </button>
+        </h2>
+        <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">
+            <p>Sameiet disponerer 4 parkeringsplasser i garasjeanlegget som benyttes til gjesteparkering.</p>
+            <p>Disse plassene kan bestilles gratis av beboere.
+              For å gi lik mulighet for alle, kan en seksjonseier bestille maks 2 ganger per uke.</p>
+            <p>Gjesteplasser 21 og 151 er bookbare døgnet rundt og har elbillader.
+              For å kunne bruke laderne på P21 og P151, benytt SmartCharge appen.</p>
+            <p>De 2 plassene i nedkjørsel
+              mellom U1 og U2 (øvre og nedre gjesteparkering) er ikke bookbare på hverdager 07:00-16:00, da de brukes av sameiets
+              leverandører, men er bookbare øvrige tider (16:00 - 07:00)</p>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+            Hvordan bestille gjesteparkering
+          </button>
+        </h2>
+        <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">
 
-	<div class="tab-content" style="margin:20px;">
-  <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-  
-  <h3>Hvordan bestille gjesteparkering?</h3>
-  <ol>
-  <li>Sjekk de to kalendrene om noen av de to gjesteparkeringene er ledig på tidspunktet du ønsker gjesteparkering</li>
-  <li>Gå til bestillingsfanen og velg ønsket varighet (opptil 12 timer)</li>
-  <li>Fyll inn informasjon og fullfør bestilling (merk - du får en engangskode på epost for å fullføre bestilling)</li>
-  <li>For at flest mulig beboere skal ha glede av gjesteparkeringen, er det en begrensning på at man kun kan bestille gjesteparkering 2 ganger per uke.</li>
-  <li>Overhold parkeringsavtale</li>
-  
-  </ol>
-  
-  <h5>Om du ikke trenger plassen lenger eller ønsker å flytte tidspunkt, kan du slette eller flytte booking.</h5>
-  <p>Vennligst benytt linken som kommer i eposten med tittelen "Behandle bestilling"</p>
-  </div>
-  <div class="tab-pane" id="bop" role="tabpanel" aria-labelledby="bop-tab">
-  <div>
+            <ol>
+              <li>Det er en egen bestillingsside og kalender for hver plass som viser tilgjengelighet, sjekk kalenderen
+                for å se om plassen er ledig. </li>
+              <li>Gå til bestllingssida for plassen, velg varighet, fyll inn informasjon og fullfør bestilling
+                <strong>MERK! du får en engangskode på epost for å fullføre bestilling</strong></li>
+            </ol>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+            Hvordan avbestille/endre bestilling
+          </button>
+        </h2>
+        <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">
+            <p>Av og til har man behov for å endre tidspunkt på bestilling, og det er helt greit.
+              </p>
+              <p>Hvis du skal bruke plassen på et annet tidspunkt enn opprinnelig bestilt eller
+            plassen ikke skal brukes, husk å slett den slik at andre kan benytte ledig tid. 
+          </p>
+          <p>
+            For å endre eller avbestille, benytt linken som kom i eposten som bekreftet booking.
+          </p></div>
+        </div>
+      </div>
+    </div>
+    <div style="margin:15px;">
 
-  <iframe src="https://outlook.office365.com/owa/calendar/vregjesteparkering2@petersborgkvartalet.onmicrosoft.com/bookings/" width="100%" height="100%" frameborder="0" border="0" style="height:2500px;width:100%"></iframe>
-  </div>
-  
-  </div>
-  <div class="tab-pane" id="kop" role="tabpanel" aria-labelledby="kop-tab">
-  <div>
-  <h3>Kalender øvre gjesteparkering</h3>
-  <iframe src="https://outlook.office365.com/calendar/published/20e55c0b01e142d3ac575ef9de042ac9@petersborgkvartalet.onmicrosoft.com/85b8dffe52cc43b3bf69321c0bfe1af315196607398497135248/calendar.html" width="100%" height="100%" frameborder="0" border="0" style="height:1500px;width:100%"></iframe>
-  </div>
-  </div>
-  <div class="tab-pane" id="bnp" role="tabpanel" aria-labelledby="bnp-tab">
-  <div>
-  <iframe src="https://outlook.office365.com/owa/calendar/Nedregjesteparkering1@petersborgkvartalet.onmicrosoft.com/bookings/" width="100%" height="100%" frameborder="0" border="0" style="height:2500px;width:100%;"></iframe>
-  </div>
-  </div>
-  <div class="tab-pane" id="knp" role="tabpanel" aria-labelledby="knp-tab">
-  <div>
-  <h3>Kalender nedre gjesteparkering</h3>
-  <iframe src="https://outlook.office365.com/owa/calendar/65ab581105e042a4a81c5e440f953d45@petersborgkvartalet.onmicrosoft.com/9157e1ba024d4682a1e03cc7219ffec114737291019538163053/calendar.html" width="100%" height="100%" frameborder="0" border="0" style="height:1500px;width:100%;"></iframe>
-  </div>
-  
-  </div>
-</div>
-  
-  
-</div>
-  
-  
-  
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+      <h5>Kalendre gjesteparkering</h5>
+      <a class="btn btn-primary" href="parkering.html#kalender-ovre">Øvre</a> 
+      <a class="btn btn-primary" href="parkering.html#kalender-nedre">Nedre</a> 
+      <a class="btn btn-primary" href="parkering.html#kalender-p21">P 21</a> 
+      <a class="btn btn-primary" href="parkering.html#kalender-p151">P 151</a> 
+    </div>
+    <div style="margin:15px;">
+      <h5>Bestill gjesteparkering</h5>
+      <a class="btn btn-success" href="parkering.html#bestill-ovre">Øvre</a> 
+      <a class="btn btn-success" href="parkering.html#bestill-nedre">Nedre</a> 
+      <a class="btn btn-success" href="parkering.html#bestill-p21">P 21</a> 
+      <a class="btn btn-success" href="parkering.html#bestill-p151">P 151</a>
+
+    </div>
+
+
+    <div class="alert alert-info">
+      <h5>Overhold parkeringsavtale</h5>
+      <p>Det er ikke tillatt å parkere på gjesteparkering uten en bekreftet bestilling.</p>
+      <p>Hvis du har en reservasjon og noen har parkert på plassen, kan du finne navn på bileier via
+        <a href="https://www.vegvesen.no/kjoretoy/kjop-og-salg/kjoretoyopplysninger/sjekk-kjoretoyopplysninger/">Sjekk kjøretøyopplysninger</a> 
+        hos Statens vegvesen og telefonnummer for vedkommende på <a href="https://1881.no">1881</a>.
+        </p>
+        <p>
+          <strong>Merk! du må logge inn med BankID for å kunne se eieropplysninger.</strong>
+         </p>
+          <p>
+        Ring eller send SMS til vedkommende.</p>
+       
+    </div>
+
+    </div>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"></script>
 </body>
+
 </html>
